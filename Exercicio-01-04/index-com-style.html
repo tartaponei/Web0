@@ -1,0 +1,134 @@
+<!--
+    Eu pesquisei sobre como deixar as coisas uma do lado da outra e mais umas coisas sobre estilo em HTML puro pra deixar como estava no quadro, mas não achei.
+
+    Eu não fui na aula de 01/04 então eu não soube se podia usar style ou não, então fiz uma versão com style e outra sem (mas a sem não fica como tá no quadro).
+-->
+
+<!-- COM AS TAGS STYLE -->
+
+<html>
+    <head>
+        <title>Sobre Você</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <div name="tudo" style="margin:0 30% 0 30%;">
+            <form>
+                <div name="instrucoes">
+                    <b>Faça:</b>
+                    <ol>
+                    <li>Preencha informações sobre você;</li>
+                    <li>Escolha uma opção (pelo menos) de fruta e de hobby;</li>
+                    <li>Escreva sobre você.</li>
+                    </ol>
+                </div>
+
+                <div name="div-nome">
+                    <label for="nome"><b>Nome</b></label><br/>
+                    <input type="text" name="nome">
+                </div>
+
+                <br/>
+
+                <div name="div-nasc-sexo">
+                    <span style="float:left;margin-right:10px;">
+                        <label for="nasc"><b>Data de Nascimento</b></label><br/>
+                        <input type="date" name="nasc"></input>
+                    </span>
+                    
+                    <label><b>Sexo</b></label><br/>
+                    <input name="masc" type="radio" value="masc">
+                    <label for="masc">Masculino</label>
+
+                    <input name="fem" type="radio" value="fem">
+                    <label for="fem">Feminino</label>
+                </div>
+                
+                <br/>
+
+                <div name="div-frutas">
+                    <label><b>Frutas que você gosta</b></label><br/>
+                    <div name="opcoes-frutas" style="display:flex;justify-content:space-between;">
+                        <div style="float:left;" name="frutas-1">
+                            <input type="checkbox" name="mamao">
+                            <label for="mamao">Mamão</label><br/>
+
+                            <input type="checkbox" name="abacaxi">
+                            <label for="abacaxi">Abacaxi</label>
+                        </div>
+                        
+                        <div style="float:left;" name="frutas-2">
+                            <input type="checkbox" name="laranja">
+                            <label for="laranja">Laranja</label><br/>
+
+                            <input type="checkbox" name="maca">
+                            <label for="maca">Maçã</label>
+                        </div>
+
+                        <div style="float:left;" name="frutas-3">
+                            <input type="checkbox" name="abacate">
+                            <label for="abacate">Abacate</label><br/>
+
+                            <input type="checkbox" name="morango">
+                            <label for="morango">Morango</label>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <br/>
+
+                <div name="div-ultima-parte" style="display:flex;">
+                    <div name="div-sobre-user-senha" style="float:left;margin-right:10px;width:50%;">
+                        <label for="textarea"><b>Fale sobre você</b></label><br/>
+                        <textarea rows="5" style="width:100%;"></textarea><br/>
+
+                        <br/>
+
+                        <label for="text"><b>Usuário</b></label><br/>
+                        <input type="text"><br/>
+
+                        <br/>
+
+                        <label for="password"><b>Senha</b></label><br/>
+                        <input type="password"><br/>
+                    </div>
+
+                    <div name="div-gosta-hobbies" style="width:50%;">
+                        <label for="select"><b>Gosta de falar sobre você?</b></label><br/>
+                        <select style="width:100%;;" name="gosta-falar">
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select><br/>
+
+                        <br/>
+
+                        <label for="select"><b>Hobbies</b></label><br>
+                        <select multiple size="6" style="width:100%;" name="hobbies">
+                            <option value="1">Correr</option>
+                            <option value="2">Nadar</option>
+                            <option value="3">Tênis</option>
+                            <option value="4">Futebol</option>
+                            <option value="5">Dança</option>
+                            <option value="6">Música</option>
+                        </select>
+                    </div>
+                </div>
+
+                <br/>
+
+                <center>
+                    <div name="botoes">
+                        <button style="margin-right:10px;">Limpar</button>
+                        <!-- pesquisei e vi que existe um tal de type="reset" então vou deixar ele aqui comentado -->
+                        <!-- <input type="reset" value="Limpar"> -->
+                        <input style="margin-left:10px;" type="submit" value="Enviar">
+                    </div>
+                </center>
+            </form>
+        </div>
+        
+    </body>
+</html>
