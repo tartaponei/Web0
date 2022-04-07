@@ -1,0 +1,144 @@
+<!--
+    Depois que eu percebi que poderia ter usado table, então refiz aqui
+-->
+
+<!-- COM TABLE -->
+
+<html>
+    <head>
+        <title>Sobre Você</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <div name="tudo">
+            <form>
+                <div id="lista">
+                    <b>Faça:</b>
+                    <ol>
+                    <li>Preencha informações sobre você;</li>
+                    <li>Escolha uma opção (pelo menos) de fruta e de hobby;</li>
+                    <li>Escreva sobre você.</li>
+                    </ol>
+                </div>
+
+                <table cellspacing="5px">
+                    <tr>
+                        <td>
+                            <label for="nome"><b>Nome</b></label><br/>
+                            <input type="text" name="nome">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="nasc"><b>Data de Nascimento</b></label><br/>
+                            <input type="date" name="nasc"></input>
+                        </td>
+                        <td>
+                            <label><b>Sexo</b></label><br/>
+                            <input name="masc" type="radio" value="masc">
+                            <label for="masc">Masculino</label>
+
+                            <input name="fem" type="radio" value="fem">
+                            <label for="fem">Feminino</label>
+                        </td>
+                    </tr>
+                        <td>
+                            <label><b>Frutas que você gosta</b></label><br/>
+                            <input type="checkbox" name="mamao">
+                            <label for="mamao">Mamão</label><br/>
+
+                            <input type="checkbox" name="abacaxi">
+                            <label for="abacaxi">Abacaxi</label>
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="laranja">
+                            <label for="laranja">Laranja</label><br/>
+
+                            <input type="checkbox" name="maca">
+                            <label for="maca">Maçã</label>
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="abacate">
+                            <label for="abacate">Abacate</label><br/>
+
+                            <input type="checkbox" name="morango">
+                            <label for="morango">Morango</label>
+                        </td>
+                    <tr>
+                        <td>
+                            <label for="textarea"><b>Fale sobre você</b></label><br/>
+                            <textarea rows="5" cols="30"></textarea><br/>
+
+                            <br/>
+
+                            <label for="text"><b>Usuário</b></label><br/>
+                            <input type="text"><br/>
+
+                            <br/>
+
+                            <label for="password"><b>Senha</b></label><br/>
+                            <input type="password"><br/>
+                        </td>
+
+                        <td>
+                            <label for="select"><b>Gosta de falar sobre você?</b></label><br/>
+                            <select name="gosta-falar">
+                                <option>Sim</option>
+                                <option>Não</option>
+                            </select><br/>
+
+                            <br/>
+
+                            <label for="select"><b>Hobbies</b></label><br>
+                            <select multiple size="6" name="hobbies">
+                                <option value="1">Correr</option>
+                                <option value="2">Nadar</option>
+                                <option value="3">Tênis</option>
+                                <option value="4">Futebol</option>
+                                <option value="5">Dança</option>
+                                <option value="6">Música</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button>Limpar</button>
+                            <input type="submit" value="Enviar">
+                        </td>
+                        
+                    </tr>
+                </table>
+
+                <br/>
+
+
+                <br/>
+                <br/>
+
+                <div name="div-ultima-parte">
+                    <div name="div-sobre-user-senha"><br/>
+                        
+                    </div>
+
+                    <br/>
+
+                    <div name="div-gosta-hobbies">
+                        
+                    </div>
+                </div>
+
+                <br/>
+
+                <div name="botoes">
+                    
+                </div>
+            </form>
+        </div>
+        
+    </body>
+</html>
